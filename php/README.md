@@ -1,6 +1,7 @@
 # Panduan Merubah APG versi HTML Menjadi PHP
 
 !!! info Daftar isi
+
     1. [Membuat Database](#membuat-database)
     2. [Membuat Koneksi ke Database](#membuat-koneksi-ke-database)
     3. [Membuat file login dan logout](#membuat-file-login-dan-logout)
@@ -80,6 +81,7 @@ if (mysqli_connect_errno()) {
 ?>
 ```
 !!! note Petunjuk
+
     - Sekarang coba jalankan server php dengan cara masuk ke dalam `root` folder project dan menggunakan terminal, ketikkan `php -S localhost:80` dan <kbd>ENTER</kbd>
     - Buka browser dan ketikkan `localhost/library/config.php`
     - Jika tidak ada salah ketik dan server berjalan normal, harusnya tapil halaman kosong.
@@ -150,6 +152,7 @@ Sekarang kita buat file `ceklogin.php`, berikut kodenya.
 ?>
 ```
 !!! note Penjelasan
+
     - Skrip di atas akan mengecek, apakah ada data pada tabel user dengan username dan password sesuai yang dimasukkan.
     - Password dienskripsi menggunakan fungsi `md5()`.
     - Jika data ditemukan, yang ditandai dengan jumlah data lebih dari 0, meka akan membuat `session` username dan password untuk digunakan sebagai penanda pada halaman lain bahwa user sudah login.
@@ -280,9 +283,12 @@ Dan berikut skrip file `dashboard`, diletakkan di dalam folder `content`.
 <h3>Anda login sebagai <b>Administrator</b></h3>
 ```
 !!! warning Perhatian
+
     - Sekarang coba buka browser kembali, ketikkan `localhost` lalu <kbd>ENTER</kbd>, tentu ada akan diarahkan ke halaman `login`.
     - Coba masukkan `admin` untuk username dan passwordnya, lalu <kbd>ENTER</kbd>.
     - <kbd>Selamat 😎</kbd>
+
+
 ## Membuat halaman `jabatan`
 
 ## Membuat halaman `pegawai`
