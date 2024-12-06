@@ -1,13 +1,13 @@
 # Panduan Merubah APG versi HTML Menjadi PHP
 
-!!! info Daftar isi
-
-    1. [Membuat Database](#membuat-database)
-    2. [Membuat Koneksi ke Database](#membuat-koneksi-ke-database)
-    3. [Membuat file login dan logout](#membuat-file-login-dan-logout)
-    4. [Membuat Halaman Dashboard](#membuat-halaman-dashboard)
-    5. [Membuat Halaman Jabatan](#membuat-halaman-jabatan)
-    6. [Membuat Halaman Pegawai](#membuat-halaman-pegawai)
+>**Daftar isi**
+>- [Panduan Merubah APG versi HTML Menjadi PHP](#panduan-merubah-apg-versi-html-menjadi-php)
+>- [Membuat database](#membuat-database)
+>- [Membuat koneksi ke database](#membuat-koneksi-ke-database)
+>- [Membuat file login dan logout](#membuat-file-login-dan-logout)
+>- [Membuat halaman dashboard](#membuat-halaman-dashboard)
+>- [Membuat halaman jabatan](#membuat-halaman-jabatan)
+>- [Membuat halaman pegawai](#membuat-halaman-pegawai)
 
 ## Membuat database
 
@@ -80,11 +80,10 @@ if (mysqli_connect_errno()) {
 }
 ?>
 ```
-!!! note Petunjuk
-
-    - Sekarang coba jalankan server php dengan cara masuk ke dalam `root` folder project dan menggunakan terminal, ketikkan `php -S localhost:80` dan <kbd>ENTER</kbd>
-    - Buka browser dan ketikkan `localhost/library/config.php`
-    - Jika tidak ada salah ketik dan server berjalan normal, harusnya tapil halaman kosong.
+>**Petunjuk**
+>- Sekarang coba jalankan server php dengan cara masuk ke dalam `root` folder project dan menggunakan terminal, ketikkan `php -S localhost:80` dan <kbd>ENTER</kbd>
+>- Buka browser dan ketikkan `localhost/library/config.php`
+>- Jika tidak ada salah ketik dan server berjalan normal, harusnya tapil halaman kosong.
 
 ## Membuat file `login` dan `logout`
 
@@ -122,8 +121,8 @@ Jika diperhatikan ada baris kode
 ```
 itu artinya jika tombol `login` diklik, maka data username dan password akan dikirim dan diproses ke file `ceklogin.php`, untuk dilakukan pencocokan antara username dan password yang ada di dalam database.
 
-!!! warning Perhatian
-    Jangan lupa copy folder `css` beserta isinya ke dalam root folder project agar tampilannya lebih bagus.
+>**Perhatian**
+>Jangan lupa copy folder `css` beserta isinya ke dalam root folder project agar tampilannya lebih bagus.
 
 Sekarang kita buat file `ceklogin.php`, berikut kodenya.
 
@@ -151,12 +150,11 @@ Sekarang kita buat file `ceklogin.php`, berikut kodenya.
     }
 ?>
 ```
-!!! note Penjelasan
-
-    - Skrip di atas akan mengecek, apakah ada data pada tabel user dengan username dan password sesuai yang dimasukkan.
-    - Password dienskripsi menggunakan fungsi `md5()`.
-    - Jika data ditemukan, yang ditandai dengan jumlah data lebih dari 0, meka akan membuat `session` username dan password untuk digunakan sebagai penanda pada halaman lain bahwa user sudah login.
-    - Function `header()` akan mengarahkan ke halama `index.php`
+>**Penjelasan**
+>- Skrip di atas akan mengecek, apakah ada data pada tabel user dengan username dan password sesuai yang dimasukkan.
+>- Password dienskripsi menggunakan fungsi `md5()`.
+>- Jika data ditemukan, yang ditandai dengan jumlah data lebih dari 0, meka akan membuat `session` username dan password untuk digunakan sebagai penanda pada halaman lain bahwa user sudah login.
+>- Function `header()` akan mengarahkan ke halama `index.php`
 
 Selanjutnya kita buat file `logout.php`
 
@@ -170,8 +168,8 @@ Selanjutnya kita buat file `logout.php`
 ?>
 ```
 
-!!! note Penjelasan
-    Fungsi `destroy()` akan menghapus data `session` username dan password yang dibuat pada file `ceklogin.php`
+>**Penjelasan**
+>Fungsi `destroy()` akan menghapus data `session` username dan password yang dibuat pada file `ceklogin.php`
 
 
 ## Membuat halaman `dashboard`
@@ -282,11 +280,10 @@ Dan berikut skrip file `dashboard`, diletakkan di dalam folder `content`.
 <h1>Selamat Datang di Aplikasi Manajemen Pegawai</h1>
 <h3>Anda login sebagai <b>Administrator</b></h3>
 ```
-!!! warning Perhatian
-
-    - Sekarang coba buka browser kembali, ketikkan `localhost` lalu <kbd>ENTER</kbd>, tentu ada akan diarahkan ke halaman `login`.
-    - Coba masukkan `admin` untuk username dan passwordnya, lalu <kbd>ENTER</kbd>.
-    - <kbd>Selamat 😎</kbd>
+>**Perhatian**
+>- Sekarang coba buka browser kembali, ketikkan `localhost` lalu <kbd>ENTER</kbd>, tentu ada akan diarahkan ke halaman `login`.
+>- Coba masukkan `admin` untuk username dan passwordnya, lalu <kbd>ENTER</kbd>.
+>- <kbd>Selamat 😎</kbd>
 
 
 ## Membuat halaman `jabatan`
