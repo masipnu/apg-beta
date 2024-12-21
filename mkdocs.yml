@@ -1,0 +1,116 @@
+# Project information
+site_name: Tutorial APG
+# site_url: https://masipnu.github.io/tutorial-mysql
+site_author: Ipnu Masyaid
+site_description: >-
+  Tutorial membuat Aplikasi Manajemen Pegawai berbasis PHP-MySQL
+nav:
+  - Beranda: welcome.md
+  - Persiapan: 01.md
+  - Koneksi Database: 02.md
+  - Login & Logout: 03.md
+  - Dashboard: 04.md
+  - Jabatan: 05.md
+  - Pegawai: 06.md
+  - Penutup: end.md
+  # - Beranda: index.md
+  # - Kata Pengantar: pengantar.md
+  # - Daftar Isi: toc.md
+  # - Bab 1 - Mendefinisikan Data: bab1.md
+  # - Bab 2 - Manipulasi Data: bab2.md
+  # - Bab 3 - Kontrol Hak Akses: bab3.md
+  # - Bab 4 - Seleksi Data 1: bab4.md
+  # - Bab 5 - Seleksi Data 2: bab5.md
+  # - Bab 6 - Tabel Virtual: bab6.md
+  # - Bab 7 - Manajemen User: bab7.md
+  # - Bab 8 - Fungsi Agregasi: bab8.md
+  # - Bab 9 - Operator dan Fungsi: bab9.md
+  # - Bab 10 - Prosedur dan Fungsi: bab10.md
+  # - Bab 11 - Trigger: bab11.md
+  # - Bab 12 - Ekspor dan Impor: bab12.md
+  # - Penutup: penutup.md
+theme:
+  icon:
+    logo: material/book
+    # Logo Notifikasi
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+  favicon: images/book.svg
+  name: material
+  font:
+    text: Open Sans
+    code: JetBrains Mono
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Mode terang
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Mode gelap
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Mode otomatis
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    # - navigation.tabs
+    # - navigation.footer
+    - content.code.copy
+    - content.code.select
+    # - toc.integrate
+    - navigation.top
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Ekstensi Keyboard
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  
+# Notification Banner
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/masipnu
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/masipnu
+    - icon: fontawesome/brands/linkedin
+      link: https://id.linkedin.com/in/ipnu-masyaid-8a6629177
+  generator: false
+copyright: Made with <span style="color:red">❤</span> by Masipnu | &copy; 2024
