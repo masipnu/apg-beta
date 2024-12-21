@@ -1,17 +1,3 @@
-# Membuat Halaman Pegawai
-
-Halaman pegawai berisi skrip yang lebih kompleks, maka untuk bisa melanjutkan, pahami dulu konsep CRUD pada halaman jabatan. Kita perlu menyiapkan 6 file, yaitu:
-
-- `pegawai.php`
-- `pegawai_tambah.php`
-- `pegawai_insert.php`
-- `pegawai_edit.php`
-- `pegawai_update.php`
-- `pegawai_hapus.php`
-
-## Halaman `pegawai.php`
-
-```php
 <?php
 if(!defined('INDEX')) die();
 ?>
@@ -66,13 +52,3 @@ while($data = mysqli_fetch_assoc($result)){
 ?>
     </tbody>
 </table>
-```
-
-!!! warning "Perhatian"
-    Yang perlu diperhatikan adalah penggunakan *query* `LEFT JOIN` dan pada tombol <kbd>Hapus</kbd> mengirimkan data foto melalui *URL* yang berisi nama foto yang akan dihapus.
-
-## Halaman `pegawai_tambah.php`
-## Halaman `pegawai_insert.php`
-## Halaman `pegawai_edit.php`
-## Halaman `pegawai_update.php`
-## Halaman `pegawai_hapus.php`
