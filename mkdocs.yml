@@ -1,11 +1,11 @@
 # Project information
 site_name: Tutorial APG
-# site_url: https://masipnu.github.io/tutorial-mysql
+site_url: https://masipnu.github.io/apg-beta
 site_author: Ipnu Masyaid
 site_description: >-
   Tutorial membuat Aplikasi Manajemen Pegawai berbasis PHP-MySQL
 nav:
-  - Beranda: welcome.md
+  - Beranda: index.md
   - Persiapan: 01.md
   - Koneksi Database: 02.md
   - Login & Logout: 03.md
@@ -31,7 +31,8 @@ nav:
   # - Penutup: penutup.md
 theme:
   icon:
-    logo: material/book
+    # logo: images/php.png
+    # favicon: images/php.png
     # Logo Notifikasi
     admonition:
       note: fontawesome/solid/note-sticky
