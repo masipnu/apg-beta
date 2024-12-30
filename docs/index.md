@@ -4,7 +4,8 @@
 
 ### Berbasis PHP-MySQL
 
-![dashboard](images/phpmysql2.png.png)
+<img src="images/phpmysql2.png" style="width:50%">
+<!-- ![dashboard](images/phpmysql2.png) -->
 
 [Mulai Belajar ](01.md){.md-button .md-button--primary}
 
