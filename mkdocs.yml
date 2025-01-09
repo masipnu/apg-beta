@@ -79,8 +79,8 @@ theme:
     - navigation.instant.prefetch
     # - navigation.tabs
     # - navigation.footer
-    - content.code.copy
-    - content.code.select
+    # - content.code.copy
+    # - content.code.select
     # - toc.integrate
     - navigation.top
 
@@ -115,3 +115,6 @@ extra:
       link: https://id.linkedin.com/in/ipnu-masyaid-8a6629177
   generator: false
 copyright: Made with <span style="color:red">❤</span> by Masipnu | &copy; 2024
+
+extra_css:
+  - stylesheets/extra.css
