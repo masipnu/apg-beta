@@ -12,7 +12,7 @@
 <body class="h-100 bg-info d-flex align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 mx-auto bg-light p-4 rounded shadow">
+			<div class="col-sm-6 col-md-6 col-lg-4 mx-auto bg-light p-4 rounded shadow">
 				<h3 class="text-center text-info pb-3 mb-3 border-bottom">Login Aplikasi</h3>
 				<form action="ceklogin.php" method="post">
 					<input class="form-control form-control-lg mb-3" type="text" placeholder="Username" id="username" name="username" >
